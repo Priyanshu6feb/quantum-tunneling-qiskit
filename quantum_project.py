@@ -10,8 +10,6 @@ This project uses a single-qubit quantum circuit to:
 - Simulate a quantum measurement as an analogy to tunneling
 - Visualize results using Qiskit's histogram plot
 
-Though simplified, the model provides intuitive insights into quantum mechanics principles like superposition and probabilistic collapse.
-
 ---
 
 ## 📁 Files Included
@@ -33,11 +31,6 @@ python quantum_tunneling_simulation.py
 
 ---
 
-## 📚 Next Steps
-- Expand the model to include entanglement or quantum walks
-- Apply similar simulation principles to model quantum superposition or interference patterns
-
----
 
 ## 📌 Author
-[Your Name] — High school student interested in physics and quantum computing. Created as an independent initiative to explore the interface of quantum mechanics and computer science.
+Priyanshu Singh — High school student interested in physics and quantum computing. Created as an independent initiative to explore the interface of quantum mechanics and computer science.
