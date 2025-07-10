@@ -1,0 +1,10 @@
+Quantum Tunneling Simulation using Qiskit
+
+This independent project models the basic concept of quantum tunneling using Qiskit's quantum circuits.
+A qubit is placed into superposition using a Hadamard gate to simulate a particle with probabilistic behavior.
+By measuring the qubit after introducing a potential 'barrier' (modeled by probabilistic collapse), we analogize
+the idea of quantum particles 'tunneling' through a classical barrier.
+
+The circuit was simulated with 1000 shots using Qiskit's Aer simulator, and the results demonstrate quantum
+probabilities in measurement outcomes. This helped me explore the intersection of physics and computation
+while building a deeper intuition for quantum principles like superposition and measurement collapse.
