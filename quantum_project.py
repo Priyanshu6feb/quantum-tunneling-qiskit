@@ -1,0 +1,43 @@
+# Quantum Tunneling Simulation Using Qiskit
+
+This repository contains a simple simulation of quantum tunneling behavior using Qiskit. The project demonstrates the use of quantum circuits to model probabilistic outcomes, akin to a quantum particle interacting with a potential barrier.
+
+---
+
+## 🧠 Project Overview
+This project uses a single-qubit quantum circuit to:
+- Create superposition using a Hadamard gate
+- Simulate a quantum measurement as an analogy to tunneling
+- Visualize results using Qiskit's histogram plot
+
+Though simplified, the model provides intuitive insights into quantum mechanics principles like superposition and probabilistic collapse.
+
+---
+
+## 📁 Files Included
+- `quantum_tunneling_simulation.py` — Qiskit code to run the simulation
+- `project_summary.txt` — Written summary for applications or resumes
+
+---
+
+## 🚀 How to Run
+1. Install Qiskit:
+```bash
+pip install qiskit matplotlib
+```
+2. Run the Python script:
+```bash
+python quantum_tunneling_simulation.py
+```
+3. View the histogram output and review the summary file.
+
+---
+
+## 📚 Next Steps
+- Expand the model to include entanglement or quantum walks
+- Apply similar simulation principles to model quantum superposition or interference patterns
+
+---
+
+## 📌 Author
+[Your Name] — High school student interested in physics and quantum computing. Created as an independent initiative to explore the interface of quantum mechanics and computer science.
