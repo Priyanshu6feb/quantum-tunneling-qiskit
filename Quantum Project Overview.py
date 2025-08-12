@@ -31,7 +31,32 @@ python quantum_project.py
 ```
 3. View the histogram output and review the summary file.
 
+Quick Start
+python3 -m pip install --upgrade pip
+python3 -m pip install qiskit qiskit-aer matplotlib
+python3 quantum_project.py
+
 ---
+
+Code Snippet
+
+from qiskit import QuantumCircuit, transpile
+from qiskit_aer import AerSimulator
+from qiskit.visualization import plot_histogram
+import matplotlib.pyplot as plt
+
+qc = QuantumCircuit(1, 1)
+qc.h(0)
+qc.measure(0, 0)
+
+sim = AerSimulator()
+result = sim.run(transpile(qc, sim), shots=1000).result()
+counts = result.get_counts()
+
+print(counts)
+plot_histogram(counts)
+plt.title("Single-Qubit Superposition: Measurement Outcomes")
+plt.show()
 
 ## 📌 Author
 Priyanshu Singh — High school student interested in physics and quantum computing. Created as an independent initiative to explore the interface of quantum mechanics and computer science.
