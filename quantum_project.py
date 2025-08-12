@@ -1,36 +1,27 @@
-# Quantum Tunneling Simulation Using Qiskit
+from qiskit import QuantumCircuit, transpile
+from qiskit_aer import AerSimulator
+from qiskit.visualization import plot_histogram
+import matplotlib.pyplot as plt
 
-This repository contains a simple simulation of quantum tunneling behavior using Qiskit. The project demonstrates the use of quantum circuits to model probabilistic outcomes, akin to a quantum particle interacting with a potential barrier.
+# Single-qubit circuit with 1 classical bit
+qc = QuantumCircuit(1, 1)
 
----
+# Put qubit 0 into superposition (50/50)
+qc.h(0)
 
-## 🧠 Project Overview
-This project uses a single-qubit quantum circuit to:
-- Create superposition using a Hadamard gate
-- Simulate a quantum measurement as an analogy to tunneling
-- Visualize results using Qiskit's histogram plot
+# Measure into classical bit 0
+qc.measure(0, 0)
 
----
+# Use Aer simulator
+sim = AerSimulator()
 
-## 📁 Files Included
-- `quantum_tunneling_simulation.py` — Qiskit code to run the simulation
-- `project_summary.txt` — Written summary for applications or resumes
+# Transpile for the simulator and run
+tqc = transpile(qc, sim)
+result = sim.run(tqc, shots=1000).result()
 
----
-
-## 🚀 How to Run
-1. Install Qiskit:
-```bash
-pip install qiskit matplotlib
-```
-2. Run the Python script:
-```bash
-python quantum_tunneling_simulation.py
-```
-3. View the histogram output and review the summary file.
-
----
-
-
-## 📌 Author
-Priyanshu Singh — High school student interested in physics and quantum computing. Created as an independent initiative to explore the interface of quantum mechanics and computer science.
+# Get counts and plot
+counts = result.get_counts()
+print(counts)
+plot_histogram(counts)
+plt.title("Single-Qubit Superposition: Measurement Outcomes")
+plt.show()
