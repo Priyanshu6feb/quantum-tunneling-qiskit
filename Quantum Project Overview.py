@@ -15,7 +15,7 @@ Though simplified, the model provides intuitive insights into quantum mechanics 
 ---
 
 ## 📁 Files Included
-- `quantum_tunneling_simulation.py` — Qiskit code to run the simulation
+- `quantum_project.py` — Qiskit code to run the simulation
 - `project_summary.txt` — Written summary for applications or resumes
 
 ---
@@ -27,15 +27,9 @@ pip install qiskit matplotlib
 ```
 2. Run the Python script:
 ```bash
-python quantum_tunneling_simulation.py
+python quantum_project.py
 ```
 3. View the histogram output and review the summary file.
-
----
-
-## 📚 Next Steps
-- Expand the model to include entanglement or quantum walks
-- Apply similar simulation principles to model quantum superposition or interference patterns
 
 ---
 
