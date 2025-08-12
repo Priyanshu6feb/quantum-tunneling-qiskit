@@ -36,6 +36,10 @@ python3 -m pip install --upgrade pip
 python3 -m pip install qiskit qiskit-aer matplotlib
 python3 quantum_project.py
 
+At then end in the terminal paste this code if your file is saved in downloads
+cd ~/Downloads
+python3 quantum_project.py
+
 ---
 
 Code Snippet
